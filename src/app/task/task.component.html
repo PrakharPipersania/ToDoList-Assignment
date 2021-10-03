@@ -1,0 +1,7 @@
+<div class="py-3 d-flex justify-content-between lineb"> 
+  <span [ngClass]="mytask.taskStatus?'done':'undone'">{{mytask.taskName}}</span> 
+  <span class="round">
+    <input type="checkbox" [id]="mytask.taskid" (click)="triggerEvent(mytask)" [checked]="mytask.taskStatus"/>
+    <label [for]="mytask.taskid"></label>
+  </span> 
+</div>
